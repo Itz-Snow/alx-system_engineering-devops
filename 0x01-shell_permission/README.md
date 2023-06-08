@@ -1,1 +1,1 @@
-This is shell permision project using bash script
+This is shell permision project using bash script so follow me 
