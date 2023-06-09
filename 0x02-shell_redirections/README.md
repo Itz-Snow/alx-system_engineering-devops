@@ -1,0 +1,1 @@
+This file contains the informatin about shell i/o redirection
