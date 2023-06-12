@@ -1,2 +1,2 @@
 #!/bin/bash
-find . \( -type f -empty -o -type d -empty \) -o -name '.*' -empty -printf "%f\n"
+find . -empty|rev|cut -d '/' -f 1 | rev |
