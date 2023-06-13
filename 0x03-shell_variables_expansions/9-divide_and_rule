@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(($POWER / $DIVIDED))| printf "%d\n"
+echo -e $(($POWER / $DIVIDED)) "\n"
