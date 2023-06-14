@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(echo $plaintext | tr 'A-Za-z' 'N-ZA-Mn-za-m')
+echo $(echo $plaintext | tr 'A-Za-z' 'N-ZA-Mn-za-m'| tr 'N-ZA-Mn-za-m' 'A-Za-z')
