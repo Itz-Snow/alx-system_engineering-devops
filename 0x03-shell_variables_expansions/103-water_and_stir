@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(( ((WATER#water) + (STIR#stir)#bestchol) ))
+echo obase=bestchol; $(( (WATER#water) + (STIR#stir) )) | bc
