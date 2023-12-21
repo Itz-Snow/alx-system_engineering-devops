@@ -1,12 +1,15 @@
 #!/usr/bin/env bash
-# This script is displaying "Best School" 10 time
+# This script will Display "Hi" if "Best School" is diplayed 9 times
 
-x=10
-while [ $x -ne 0 ]; do
-  if [ $x -eq 9 ]; then
-    echo -e "Best School\nHi"
-  else
-    echo "Best School"
-  fi
-  ((x--))
+counter=1
+while [ $counter -le 10 ]
+do
+if [ $counter -eq 9 ]
+then
+echo "Best School"
+echo "Hi"
+else
+echo "Best School"
+fi
+((counter++))
 done
