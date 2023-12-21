@@ -4,16 +4,8 @@
 # In a list format
 # Where only the part of the name after the first dash is displayed
 
-cd "$(dirname "$0")" || exit
-
 for file in *; do
-    if [[ $file == .* ]]; then
-	continue
-    fi
-    if [[ $file == *-* ]]; then
-	display_name=${file#*-}
-	echo "- $display_name"
-    else
-	echo "- $file"
+    if [ -f "$file" ] && [[ $file =~ -(.*) ]]; then
+        echo "${BASH_REMATCH[1]}"
     fi
 done
