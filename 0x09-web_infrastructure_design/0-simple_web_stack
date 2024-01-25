@@ -1,0 +1,32 @@
+https://imgur.com/a/PS5uvFX
+
+Question: What is a server ?
+Answer : A server is a specialized computer or software application designed to respond to requests from client devices over a network
+
+Question: What is the role of the domain name ?
+Answer : A domain name (often simply called a domain) is an easy-to-remember name that’s associated with a physical IP address on the Internet
+
+Question : What type of DNS record www is in www.foobar.com
+Answer : www is a CNAME(Canonical Name) DNS record-type in www.foobar.com since it also points to the same IP address as foobar.comand if the IP address changes we can only record changes in the DNS A record of foobar.com.
+
+Question : What is the role of the web server
+Answer : The role of the webserver is to accept requests made by the browser through HTTP, process the requests by responding with HTML content.
+
+Question : What is the role of the application server
+Answer :  The role of the application server is to act as a host (or container) for the user’s business logic while facilitating access to and performance of the business application.
+
+Question : What is the role of the database
+Answer : The database is responsible for storing user information and for retrival, modification, deletion among others
+
+
+Question :What is the server using to communicate with the computer of the user requesting the website
+Answer : The server used HTTP protocol to communicate with the user's browser
+
+Issues with a one server infrastructure
+
+SPOF (Single point of failure) - in this infrastructure model, there is no allocation for redundancy and also, a failure at any point in the nfrastructure leads to considerable downtime which is detrimental. For better performance and high availability systems, other servers and databases can be put in place.
+
+Downtime when maintenance is needed with this infrastructure is not optimal, this is majorly due to the point pointed out earlier. For systems that have lower downtime, redundancy is a major player. 
+One way is to have at least two servers and databases so that in the case of a maintenance procedure, log shipping and failover techniques can be put in place. This ensure there is no downtime and services are all still rendered
+
+The one server infrastructure does not have a load balancing algorithm implemented and also has only one server that could be serving multiple users and as such once the load on the server becomes too much, there would be considerable downtime, the web servers would also no longer be scalable
